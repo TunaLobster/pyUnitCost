@@ -30,10 +30,6 @@ class product:
         return str([round(self.material_cost, 2), round(self.shipping_cost, 2), round(self.price_per_unit, 2)])
 
     def read_file(self, path=None):
-        # makes for faster debugging
-        if path is None:
-            path = 'example_product.txt'
-
         with open(path, 'r', encoding='UTF-8') as f:
             lines = [x.strip() for x in f.readlines()]  # bad practice for large datasets, but not a problem here
 
@@ -76,7 +72,11 @@ class product:
         return (self.material_cost + self.shipping_cost) / x
 
 
-if __name__ == '__main__':
-    test = product(production_run=5)
+def __example():
+    test = product(path='example_product.txt', production_run=5)
     print(test)
     print(test.items)
+
+
+if __name__ == '__main__':
+    __example()
