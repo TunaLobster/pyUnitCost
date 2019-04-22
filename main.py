@@ -40,6 +40,9 @@ class product:
                 text[i] = text[i].lower().strip()
             if text[0].startswith('#') or text[0] == '':
                 continue
+            elif len(text) > 6:
+                print(f'Too many values on line "{line}"')
+                quit(1)
             elif text[0] == 'item':
                 new_item = item(text[1], float(text[2]), float(text[3]),
                                 int(text[4]))
