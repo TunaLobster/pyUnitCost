@@ -1,0 +1,9 @@
+# example product is the DIY Soyuz numberpad by ai03
+# item, name, cost, shipping, quantity_shipped, quantity_per_unit
+item, PCB, 17.9, 20, 5, 1
+item, Switches, 18.00, 0, 20, 20
+item, Rubber feet, 1.18, 5, 4, 4
+item, key stabilizers, 8.00, 5, 1, 1
+item, 1N4148 Diodes, 2.29, 5, 50, 20
+item, M2x5mm stainless steel phillips pan head screws, 3.49, 5, 50, 8
+item, M2x10mm brass standoffs, 3.99, 5, 50, 4
